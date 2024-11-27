@@ -29,7 +29,31 @@ struct PostView: View {
                 Spacer()
             }
             
+            RoundedRectangle(cornerRadius: 2)
+                .stroke(lineWidth: 1)
+                .frame(height: 50)
+                .overlay(
+                    Text("タグを選択")
+                )
+                .padding()
+            
+            Button(action: {
+                
+            }, label: {
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(lineWidth: 1.0)
+                    .frame(height: 300)
+                    .padding()
+                    .foregroundColor(.black)
+                    .overlay(
+                        Image(systemName: "camera")
+                    )
+                    
+            })
+            
             Spacer()
+            
+            
         }
     }
 }
