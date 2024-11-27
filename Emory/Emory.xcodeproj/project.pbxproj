@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F39D3BE32CF7340700E640A5 /* EmoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BE22CF7340700E640A5 /* EmoryApp.swift */; };
+		F39D3BE52CF7340700E640A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BE42CF7340700E640A5 /* ContentView.swift */; };
+		F39D3BE72CF7340800E640A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D3BE62CF7340800E640A5 /* Assets.xcassets */; };
+		F39D3BEA2CF7340800E640A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D3BE92CF7340800E640A5 /* Preview Assets.xcassets */; };
+		F39D3BF42CF7340900E640A5 /* EmoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BF32CF7340900E640A5 /* EmoryTests.swift */; };
+		F39D3BFE2CF7340900E640A5 /* EmoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BFD2CF7340900E640A5 /* EmoryUITests.swift */; };
+		F39D3C002CF7340900E640A5 /* EmoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BFF2CF7340900E640A5 /* EmoryUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F39D3BF02CF7340900E640A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F39D3BD72CF7340700E640A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F39D3BDE2CF7340700E640A5;
+			remoteInfo = Emory;
+		};
+		F39D3BFA2CF7340900E640A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F39D3BD72CF7340700E640A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F39D3BDE2CF7340700E640A5;
+			remoteInfo = Emory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F39D3BDF2CF7340700E640A5 /* Emory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39D3BE22CF7340700E640A5 /* EmoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryApp.swift; sourceTree = "<group>"; };
+		F39D3BE42CF7340700E640A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F39D3BE62CF7340800E640A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F39D3BE92CF7340800E640A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F39D3BEF2CF7340900E640A5 /* EmoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39D3BF32CF7340900E640A5 /* EmoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryTests.swift; sourceTree = "<group>"; };
+		F39D3BF92CF7340900E640A5 /* EmoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39D3BFD2CF7340900E640A5 /* EmoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryUITests.swift; sourceTree = "<group>"; };
+		F39D3BFF2CF7340900E640A5 /* EmoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F39D3BDC2CF7340700E640A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39D3BEC2CF7340900E640A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39D3BF62CF7340900E640A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F39D3BD62CF7340700E640A5 = {
+			isa = PBXGroup;
+			children = (
+				F39D3BE12CF7340700E640A5 /* Emory */,
+				F39D3BF22CF7340900E640A5 /* EmoryTests */,
+				F39D3BFC2CF7340900E640A5 /* EmoryUITests */,
+				F39D3BE02CF7340700E640A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F39D3BE02CF7340700E640A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F39D3BDF2CF7340700E640A5 /* Emory.app */,
+				F39D3BEF2CF7340900E640A5 /* EmoryTests.xctest */,
+				F39D3BF92CF7340900E640A5 /* EmoryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F39D3BE12CF7340700E640A5 /* Emory */ = {
+			isa = PBXGroup;
+			children = (
+				F39D3BE22CF7340700E640A5 /* EmoryApp.swift */,
+				F39D3BE42CF7340700E640A5 /* ContentView.swift */,
+				F39D3BE62CF7340800E640A5 /* Assets.xcassets */,
+				F39D3BE82CF7340800E640A5 /* Preview Content */,
+			);
+			path = Emory;
+			sourceTree = "<group>";
+		};
+		F39D3BE82CF7340800E640A5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F39D3BE92CF7340800E640A5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F39D3BF22CF7340900E640A5 /* EmoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				F39D3BF32CF7340900E640A5 /* EmoryTests.swift */,
+			);
+			path = EmoryTests;
+			sourceTree = "<group>";
+		};
+		F39D3BFC2CF7340900E640A5 /* EmoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F39D3BFD2CF7340900E640A5 /* EmoryUITests.swift */,
+				F39D3BFF2CF7340900E640A5 /* EmoryUITestsLaunchTests.swift */,
+			);
+			path = EmoryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F39D3BDE2CF7340700E640A5 /* Emory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F39D3C032CF7340900E640A5 /* Build configuration list for PBXNativeTarget "Emory" */;
+			buildPhases = (
+				F39D3BDB2CF7340700E640A5 /* Sources */,
+				F39D3BDC2CF7340700E640A5 /* Frameworks */,
+				F39D3BDD2CF7340700E640A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Emory;
+			productName = Emory;
+			productReference = F39D3BDF2CF7340700E640A5 /* Emory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F39D3BEE2CF7340900E640A5 /* EmoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F39D3C062CF7340900E640A5 /* Build configuration list for PBXNativeTarget "EmoryTests" */;
+			buildPhases = (
+				F39D3BEB2CF7340900E640A5 /* Sources */,
+				F39D3BEC2CF7340900E640A5 /* Frameworks */,
+				F39D3BED2CF7340900E640A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F39D3BF12CF7340900E640A5 /* PBXTargetDependency */,
+			);
+			name = EmoryTests;
+			productName = EmoryTests;
+			productReference = F39D3BEF2CF7340900E640A5 /* EmoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F39D3BF82CF7340900E640A5 /* EmoryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F39D3C092CF7340900E640A5 /* Build configuration list for PBXNativeTarget "EmoryUITests" */;
+			buildPhases = (
+				F39D3BF52CF7340900E640A5 /* Sources */,
+				F39D3BF62CF7340900E640A5 /* Frameworks */,
+				F39D3BF72CF7340900E640A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F39D3BFB2CF7340900E640A5 /* PBXTargetDependency */,
+			);
+			name = EmoryUITests;
+			productName = EmoryUITests;
+			productReference = F39D3BF92CF7340900E640A5 /* EmoryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F39D3BD72CF7340700E640A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					F39D3BDE2CF7340700E640A5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					F39D3BEE2CF7340900E640A5 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F39D3BDE2CF7340700E640A5;
+					};
+					F39D3BF82CF7340900E640A5 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F39D3BDE2CF7340700E640A5;
+					};
+				};
+			};
+			buildConfigurationList = F39D3BDA2CF7340700E640A5 /* Build configuration list for PBXProject "Emory" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F39D3BD62CF7340700E640A5;
+			productRefGroup = F39D3BE02CF7340700E640A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F39D3BDE2CF7340700E640A5 /* Emory */,
+				F39D3BEE2CF7340900E640A5 /* EmoryTests */,
+				F39D3BF82CF7340900E640A5 /* EmoryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F39D3BDD2CF7340700E640A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39D3BEA2CF7340800E640A5 /* Preview Assets.xcassets in Resources */,
+				F39D3BE72CF7340800E640A5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39D3BED2CF7340900E640A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39D3BF72CF7340900E640A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F39D3BDB2CF7340700E640A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39D3BE52CF7340700E640A5 /* ContentView.swift in Sources */,
+				F39D3BE32CF7340700E640A5 /* EmoryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39D3BEB2CF7340900E640A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39D3BF42CF7340900E640A5 /* EmoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39D3BF52CF7340900E640A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39D3BFE2CF7340900E640A5 /* EmoryUITests.swift in Sources */,
+				F39D3C002CF7340900E640A5 /* EmoryUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F39D3BF12CF7340900E640A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F39D3BDE2CF7340700E640A5 /* Emory */;
+			targetProxy = F39D3BF02CF7340900E640A5 /* PBXContainerItemProxy */;
+		};
+		F39D3BFB2CF7340900E640A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F39D3BDE2CF7340700E640A5 /* Emory */;
+			targetProxy = F39D3BFA2CF7340900E640A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F39D3C012CF7340900E640A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F39D3C022CF7340900E640A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F39D3C042CF7340900E640A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Emory/Preview Content\"";
+				DEVELOPMENT_TEAM = J37PZZ77T2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Emory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F39D3C052CF7340900E640A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Emory/Preview Content\"";
+				DEVELOPMENT_TEAM = J37PZZ77T2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Emory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F39D3C072CF7340900E640A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J37PZZ77T2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.EmoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Emory";
+			};
+			name = Debug;
+		};
+		F39D3C082CF7340900E640A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J37PZZ77T2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.EmoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emory.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Emory";
+			};
+			name = Release;
+		};
+		F39D3C0A2CF7340900E640A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J37PZZ77T2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.EmoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Emory;
+			};
+			name = Debug;
+		};
+		F39D3C0B2CF7340900E640A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J37PZZ77T2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.EmoryUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Emory;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F39D3BDA2CF7340700E640A5 /* Build configuration list for PBXProject "Emory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39D3C012CF7340900E640A5 /* Debug */,
+				F39D3C022CF7340900E640A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F39D3C032CF7340900E640A5 /* Build configuration list for PBXNativeTarget "Emory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39D3C042CF7340900E640A5 /* Debug */,
+				F39D3C052CF7340900E640A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F39D3C062CF7340900E640A5 /* Build configuration list for PBXNativeTarget "EmoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39D3C072CF7340900E640A5 /* Debug */,
+				F39D3C082CF7340900E640A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F39D3C092CF7340900E640A5 /* Build configuration list for PBXNativeTarget "EmoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39D3C0A2CF7340900E640A5 /* Debug */,
+				F39D3C0B2CF7340900E640A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F39D3BD72CF7340700E640A5 /* Project object */;
+}
