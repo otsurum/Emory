@@ -71,6 +71,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F313BF2C2CF73ECC008E9FDE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		F39D3BD62CF7340700E640A5 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +103,7 @@
 			children = (
 				F39D3BE22CF7340700E640A5 /* EmoryApp.swift */,
 				F39D3BE42CF7340700E640A5 /* ContentView.swift */,
+				F313BF2C2CF73ECC008E9FDE /* UI */,
 				F39D3BE62CF7340800E640A5 /* Assets.xcassets */,
 				F39D3BE82CF7340800E640A5 /* Preview Content */,
 			);
