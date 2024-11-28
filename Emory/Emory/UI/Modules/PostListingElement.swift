@@ -11,7 +11,7 @@ struct PostListingElement: View {
     var post: Post
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 Text(post.getTitle())
                     .padding()
@@ -22,16 +22,19 @@ struct PostListingElement: View {
                 }.padding()
             }
             
-            Text(post.getImage()).padding()
+            HStack {
+                Spacer()
+                Text(post.getImage()).padding()
+                Spacer()
+            }
             
-            TagListing(tagList: post.getTags())
-//            LazyVGrid(columns: [GridItem()]) {
-//                ForEach(post.getTags(), id: \.self) { tag in
-//                    TagSegment(tagName: tag)
-//                }
-//            }
-//            .background(Color.blue)
-            .padding()
+            HStack {
+                ForEach(post.getTags(), id: \.self) { tag in
+                    Text(tag)
+                        .foregroundStyle(Color.blue)
+                        
+                }
+            }.padding()
         }
     }
 }

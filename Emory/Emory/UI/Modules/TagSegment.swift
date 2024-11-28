@@ -18,7 +18,6 @@ struct TagSegment: View {
                 Capsule()
                     .stroke(Color.blue ,lineWidth: 2)
                     .frame(width: geometry.size.width, height: geometry.size.width * 2/3)
-//                    .frame(minWidth: geometry.size.width / 4, maxWidth: geometry.size.width, minHeight: geometry.size.width / 8, maxHeight: geometry.size.width / 2)
                     .overlay(
                         Text(tagName)
                             .foregroundStyle(Color.blue)
