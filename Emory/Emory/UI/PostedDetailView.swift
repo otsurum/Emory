@@ -11,7 +11,7 @@ struct PostedDetailView: View {
     var post: Post
     
     var body: some View {
-        VStack {
+        ScrollView {
             HStack {
                 Text(post.getTitle())
                     .padding()
@@ -27,11 +27,10 @@ struct PostedDetailView: View {
                 })
             }
             
-            Spacer()
+            
             
             Text(post.getImage())
-            
-            Spacer()
+    
             
         }
     }
