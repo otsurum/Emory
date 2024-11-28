@@ -11,8 +11,8 @@ struct PostListingView: View {
     
     var body: some View {
         List {
-            PostListingElement()
-            PostListingElement()
+//            PostListingElement()
+//            PostListingElement()
         }
     }
 }
