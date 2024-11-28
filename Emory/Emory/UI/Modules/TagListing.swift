@@ -16,6 +16,7 @@ struct TagListing:  View {
             LazyVGrid(columns: [GridItem(.adaptive(minimum: geometry.size.width/5))], spacing: geometry.size.width/6) {
                 ForEach(tagList, id: \.self) { tag in
                     TagSegment(tagName: tag)
+                        .padding()
 //                        .background(Color.black)
                 }
             }

@@ -27,9 +27,21 @@ struct PostedDetailView: View {
                 })
             }
             
+//            HStack {
+//                ForEach(post.getTags(), id: \.self) { tag in
+//                    TagSegment(tagName: tag)
+//                }
+//            }
             
-            
-            Text(post.getImage())
+            LazyHGrid(rows: [GridItem(), GridItem()]) {
+                HStack {
+                    ForEach(post.getTags(), id: \.self) { tag in
+                        
+                    }
+                }
+                
+                Text(post.getImage())
+            }
     
             
         }
