@@ -22,7 +22,7 @@ struct PostedDetailView: View {
                 }, label: {
                     VStack {
 //                        Text(post)
-                        Text(post.owner)
+                        Text(post.getOwer())
                     }.padding()
                 })
             }
@@ -33,15 +33,24 @@ struct PostedDetailView: View {
 //                }
 //            }
             
-            LazyHGrid(rows: [GridItem(), GridItem()]) {
-                HStack {
-                    ForEach(post.getTags(), id: \.self) { tag in
-                        
+            VStack {
+                HStack() {
+                    Text("タグ：")
+                        .bold()
+                        .padding(.horizontal)
+                    Spacer()
+                    
+                    HStack {
+                        ForEach(post.getTags(), id: \.self) { tag in
+                            Text(tag)
+                                .foregroundStyle(.blue)
+                                .padding()
+                        }
                     }
                 }
+            }.padding(.bottom, 50)
                 
-                Text(post.getImage())
-            }
+            Text(post.getImage())
     
             
         }
