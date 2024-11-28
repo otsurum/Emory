@@ -20,14 +20,14 @@ extension Post {
     // debug
     static func getExamplePostList() -> [Post] {
         return [
-            Post(title: "title1", tags: [], owner: "owner1", image: "image1"),
-            Post(title: "title2", tags: [], owner: "owner2", image: "image2")
+            Post(title: "title1", tags: ["CS", "B3"], owner: "owner1", image: "image1"),
+            Post(title: "title2", tags: ["研究室", "院試", "過去問"], owner: "owner2", image: "image2")
         ]
     }
     
     // debug
     static func getExamplePostObject() -> Post {
-        return Post(title: "title", tags: [], owner: "owner", image: "image")
+        return Post(title: "title", tags: ["研究室", "院試", "過去問"], owner: "owner", image: "image")
     }
     
     func getTitle() -> String {
