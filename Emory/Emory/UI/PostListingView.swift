@@ -11,8 +11,12 @@ struct PostListingView: View {
     var postList: [Post] = Post.getExamplePostList()
     
     var body: some View {
-        List(postList) { post in
-            PostListingElement(post: post)
+        ScrollView {
+            ForEach(postList) { post in
+                PostListingElement(post: post)
+                    .padding()
+                Divider()
+            }.padding()
         }
     }
 }

@@ -9,10 +9,9 @@ import SwiftUI
 
 struct PostListingElement: View {
     var post: Post
-    let rows = [GridItem(), GridItem(), GridItem()]
     
     var body: some View {
-        LazyHGrid(rows: rows) {
+        VStack {
             HStack {
                 Text(post.getTitle())
                     .padding()
@@ -23,10 +22,16 @@ struct PostListingElement: View {
                 }.padding()
             }
             
-            TagListing(tagList: post.getTags())
-                .padding()
-            
             Text(post.getImage()).padding()
+            
+            TagListing(tagList: post.getTags())
+//            LazyVGrid(columns: [GridItem()]) {
+//                ForEach(post.getTags(), id: \.self) { tag in
+//                    TagSegment(tagName: tag)
+//                }
+//            }
+//            .background(Color.blue)
+            .padding()
         }
     }
 }

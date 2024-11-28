@@ -13,11 +13,13 @@ struct TagListing:  View {
     var body: some View {
         GeometryReader { geometry in
             
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: geometry.size.width/4))], spacing: geometry.size.width/5) {
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: geometry.size.width/5))], spacing: geometry.size.width/6) {
                 ForEach(tagList, id: \.self) { tag in
                     TagSegment(tagName: tag)
+//                        .background(Color.black)
                 }
             }
+            
         }
     }
 }
