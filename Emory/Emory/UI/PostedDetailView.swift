@@ -8,15 +8,12 @@
 import SwiftUI
 
 struct PostedDetailView: View {
-    let title = "タイトル"
-    let userIcon = "ユーザーアイコン"
-    let userName = "ユーザーネーム"
-    let image = "イメージ"
+    var post: Post
     
     var body: some View {
         VStack {
             HStack {
-                Text(title)
+                Text(post.getTitle())
                     .padding()
                 Spacer()
                 
@@ -24,15 +21,15 @@ struct PostedDetailView: View {
                     
                 }, label: {
                     VStack {
-                        Text(userIcon)
-                        Text(userName)
+//                        Text(post)
+                        Text(post.owner)
                     }.padding()
                 })
             }
             
             Spacer()
             
-            Text(image)
+            Text(post.getImage())
             
             Spacer()
             
@@ -41,5 +38,5 @@ struct PostedDetailView: View {
 }
 
 #Preview {
-    PostedDetailView()
+    PostedDetailView(post: Post.getExamplePostObject())
 }

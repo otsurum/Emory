@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PostView: View {
+struct PostingView: View {
     @State var inputTitle = ""
     
     private let fontSizeOnText: CGFloat = 30
@@ -59,5 +59,5 @@ struct PostView: View {
 }
 
 #Preview {
-    PostView()
+    PostingView()
 }
