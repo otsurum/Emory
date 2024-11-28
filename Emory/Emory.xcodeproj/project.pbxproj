@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F313BF2E2CF7532A008E9FDE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F313BF2D2CF7532A008E9FDE /* ProfileView.swift */; };
 		F313BF302CF75783008E9FDE /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F313BF2F2CF75783008E9FDE /* PostView.swift */; };
+		F384536F2CF7FC2500C4354A /* PostedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F384536E2CF7FC2500C4354A /* PostedDetailView.swift */; };
 		F39D3BE32CF7340700E640A5 /* EmoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BE22CF7340700E640A5 /* EmoryApp.swift */; };
 		F39D3BE52CF7340700E640A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BE42CF7340700E640A5 /* ContentView.swift */; };
 		F39D3BE72CF7340800E640A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D3BE62CF7340800E640A5 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		F313BF2D2CF7532A008E9FDE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F313BF2F2CF75783008E9FDE /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		F384536E2CF7FC2500C4354A /* PostedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostedDetailView.swift; sourceTree = "<group>"; };
 		F39D3BDF2CF7340700E640A5 /* Emory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D3BE22CF7340700E640A5 /* EmoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryApp.swift; sourceTree = "<group>"; };
 		F39D3BE42CF7340700E640A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				F313BF2D2CF7532A008E9FDE /* ProfileView.swift */,
 				F313BF2F2CF75783008E9FDE /* PostView.swift */,
+				F384536E2CF7FC2500C4354A /* PostedDetailView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				F313BF2E2CF7532A008E9FDE /* ProfileView.swift in Sources */,
 				F313BF302CF75783008E9FDE /* PostView.swift in Sources */,
 				F39D3BE32CF7340700E640A5 /* EmoryApp.swift in Sources */,
+				F384536F2CF7FC2500C4354A /* PostedDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
