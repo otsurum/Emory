@@ -22,7 +22,11 @@ struct PostListingElement: View {
                 }.padding()
             }
             
+            Spacer()
+            
             TagListing(tagList: post.getTags())
+            
+            Spacer()
             
             Text(post.getImage()).padding()
         }

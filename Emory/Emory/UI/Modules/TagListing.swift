@@ -7,24 +7,25 @@
 
 import SwiftUI
 
-struct TagListing: View {
+struct TagListing:  View {
     let tagList: [String]
     
-    let layout = [GridItem(.adaptive(minimum: 50))]
-    
     var body: some View {
-        LazyVGrid(columns: layout) {
-            ForEach(tagList, id: \.self) { tag in
-                Button(action: {
-                    
-                }, label: {
-                    TagSegment(tagName: tag)
-                })
+        GeometryReader { geometry in
+            
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: geometry.size.width/5))], spacing: 60) {
+                ForEach(tagList, id: \.self) { tag in
+                    Button(action: {
+                        
+                    }, label: {
+                        TagSegment(tagName: tag)
+                    })
+                }
             }
         }
     }
 }
 
 #Preview {
-    TagListing(tagList: Post.getExamplePostObject().getTags()+["情報"])
+    TagListing(tagList: Post.getExamplePostObject().getTags()+["情報", "工学部"])
 }
