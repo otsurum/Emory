@@ -13,13 +13,9 @@ struct TagListing:  View {
     var body: some View {
         GeometryReader { geometry in
             
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: geometry.size.width/5))], spacing: 60) {
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: geometry.size.width/4))], spacing: geometry.size.width/5) {
                 ForEach(tagList, id: \.self) { tag in
-                    Button(action: {
-                        
-                    }, label: {
-                        TagSegment(tagName: tag)
-                    })
+                    TagSegment(tagName: tag)
                 }
             }
         }

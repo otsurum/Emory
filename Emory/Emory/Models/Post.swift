@@ -23,7 +23,7 @@ extension Post {
             Post(title: "title0", tags: ["工大祭"], owner: "owner0", image: "image0"),
             Post(title: "title1", tags: ["CS", "B3"], owner: "owner1", image: "image1"),
             Post(title: "title2", tags: ["研究室", "院試", "過去問"], owner: "owner2", image: "image2"),
-            Post(title: "title3", tags: ["試験", "情報数学", "過去問", "情報工"], owner: "owner3", image: "image3")
+            Post(title: "title3", tags: ["試験", "情報数学", "過去問", "情報工", "頑張れ"], owner: "owner3", image: "image3")
         ]
     }
     
