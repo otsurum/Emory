@@ -16,9 +16,7 @@ struct TagListing: View {
                 Button(action: {
                     
                 }, label: {
-//                    Capsule()
-//                        .stroke(lineWidth: 2)
-//                        .
+                    TagSegment(tagName: tag)
                 })
             }
         }
