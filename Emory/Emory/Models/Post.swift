@@ -7,7 +7,7 @@
 
 struct Post {
     let title: String
-    let tags: [String] = []
+    let tags: [String]
     let owner: String
     let image: String
 }
@@ -15,16 +15,16 @@ struct Post {
 extension Post {
     
     // debug
-    func getExamplePostList() -> [Post] {
+    static func getExamplePostList() -> [Post] {
         return [
-            Post(title: "title1", owner: "owner1", image: "image1"),
-            Post(title: "title2", owner: "owner2", image: "image2")
+            Post(title: "title1", tags: [], owner: "owner1", image: "image1"),
+            Post(title: "title2", tags: [], owner: "owner2", image: "image2")
         ]
     }
     
     // debug
-    func getExamplePostObject() -> Post {
-        return Post(title: "title", owner: "owner", image: "image")
+    static func getExamplePostObject() -> Post {
+        return Post(title: "title", tags: [], owner: "owner", image: "image")
     }
     
     func getTitle() -> String {
