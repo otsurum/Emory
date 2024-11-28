@@ -22,9 +22,7 @@ struct PostListingElement: View {
                 }.padding()
             }
             
-            HStack {
-                Text("タグ表示")
-            }
+            TagListing(tagList: post.getTags())
             
             Text(post.getImage()).padding()
         }

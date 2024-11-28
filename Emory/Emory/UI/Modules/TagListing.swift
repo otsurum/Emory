@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct TagListing: View {
-    let tagList = Post.getExamplePostObject().getTags()
+    let tagList: [String]
+    
+    let layout = [GridItem(.adaptive(minimum: 50))]
     
     var body: some View {
-        HStack {
+        LazyVGrid(columns: layout) {
             ForEach(tagList, id: \.self) { tag in
                 Button(action: {
                     
@@ -24,5 +26,5 @@ struct TagListing: View {
 }
 
 #Preview {
-    TagListing()
+    TagListing(tagList: Post.getExamplePostObject().getTags()+["情報"])
 }
