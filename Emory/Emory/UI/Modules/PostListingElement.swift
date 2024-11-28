@@ -19,22 +19,23 @@ struct PostListingElement: View {
                 VStack {
                     
                     Text(post.getOwer())
-                }.padding()
+                }.padding(.horizontal)
             }
-            
-            HStack {
-                Spacer()
-                Text(post.getImage()).padding()
-                Spacer()
-            }
-            
+                    
             HStack {
                 ForEach(post.getTags(), id: \.self) { tag in
                     Text(tag)
                         .foregroundStyle(Color.blue)
                         
                 }
+            }.padding(.horizontal)
+            
+            HStack {
+                Spacer()
+                Text(post.getImage()).padding()
+                Spacer()
             }.padding()
+
         }
     }
 }
