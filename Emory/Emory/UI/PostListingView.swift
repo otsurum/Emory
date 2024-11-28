@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct PostListingView: View {
+    var postList: [Post] = Post.getExamplePostList()
     
     var body: some View {
-        List {
-//            PostListingElement()
-//            PostListingElement()
+        List(postList) { post in
+            PostListingElement(post: post)
         }
     }
 }

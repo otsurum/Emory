@@ -4,8 +4,11 @@
 //
 //  Created by 鶴見駿 on 2024/11/28.
 //
+import Foundation
 
-struct Post {
+struct Post: Identifiable {
+    let id = UUID()
+    
     let title: String
     let tags: [String]
     let owner: String

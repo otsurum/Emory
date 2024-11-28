@@ -8,20 +8,17 @@
 import SwiftUI
 
 struct PostListingElement: View {
-    let title = "タイトル"
-    let userName = "ユーザー名"
-    let userIcon = "ユーザーアイコン"
-    let image = "イメージ"
+    var post: Post
     
     var body: some View {
         VStack {
             HStack {
-                Text(title)
+                Text(post.getTitle())
                     .padding()
                 Spacer()
                 VStack {
-                    Text(userIcon)
-                    Text(userName)
+                    
+                    Text(post.getOwer())
                 }.padding()
             }
             
@@ -29,11 +26,11 @@ struct PostListingElement: View {
                 Text("タグ表示")
             }
             
-            Text(image).padding()
+            Text(post.getImage()).padding()
         }
     }
 }
 
 #Preview {
-    PostListingElement()
+    PostListingElement(post: Post.getExamplePostObject())
 }
