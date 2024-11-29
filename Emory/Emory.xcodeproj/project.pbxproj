@@ -104,6 +104,7 @@
 			children = (
 				F35551522CF81D1C00F6841A /* TagListing.swift */,
 				F38453712CF7FFDF00C4354A /* PostListingElement.swift */,
+				F35551522CF81D1C00F6841A /* TagListing.swift */,
 				F35551542CF81F2900F6841A /* TagSegment.swift */,
 			);
 			path = Modules;

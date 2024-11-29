@@ -11,7 +11,7 @@ struct PostedDetailView: View {
     var post: Post
     
     var body: some View {
-        VStack {
+        ScrollView {
             HStack {
                 Text(post.getTitle())
                     .padding()
@@ -22,16 +22,36 @@ struct PostedDetailView: View {
                 }, label: {
                     VStack {
 //                        Text(post)
-                        Text(post.owner)
+                        Text(post.getOwer())
                     }.padding()
                 })
             }
             
-            Spacer()
+//            HStack {
+//                ForEach(post.getTags(), id: \.self) { tag in
+//                    TagSegment(tagName: tag)
+//                }
+//            }
             
+            VStack {
+                HStack() {
+                    Text("タグ：")
+                        .bold()
+                        .padding(.horizontal)
+                    Spacer()
+                    
+                    HStack {
+                        ForEach(post.getTags(), id: \.self) { tag in
+                            Text(tag)
+                                .foregroundStyle(.blue)
+                                .padding()
+                        }
+                    }
+                }
+            }.padding(.bottom, 50)
+                
             Text(post.getImage())
-            
-            Spacer()
+    
             
         }
     }

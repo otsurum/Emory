@@ -9,10 +9,10 @@ import Foundation
 struct Post: Identifiable {
     let id = UUID()
     
-    let title: String
-    let tags: [String]
-    let owner: String
-    let image: String
+    private let title: String
+    private let tags: [String]
+    private let owner: String
+    private let image: String
 }
 
 extension Post {
