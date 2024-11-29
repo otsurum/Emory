@@ -83,7 +83,7 @@ struct PostingView: View {
                 Spacer()
             }
             .fullScreenCover(isPresented: $isTakingImage) {
-                CameraCaptureView(image: $image)
+                CameraCaptureView(image: $image, usingCamera: $isTakingImage)
                     .ignoresSafeArea()
             }
             .popover(isPresented: $isSelectingImage) {

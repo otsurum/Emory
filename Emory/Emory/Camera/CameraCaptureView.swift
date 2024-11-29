@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CameraCaptureView: UIViewControllerRepresentable {
     @Binding var image: UIImage?
-    @Environment(\.presentationMode) private var presentationMode
+    @Binding var usingCamera: Bool
+//    @Environment(\.presentationMode) private var presentationMode
     
     
     func makeUIViewController(context: Context) -> UIImagePickerController {
@@ -38,12 +39,13 @@ struct CameraCaptureView: UIViewControllerRepresentable {
                 parent.image = uiImage
             }
             
-            parent.presentationMode.wrappedValue.dismiss()
+            self.parent.usingCamera = false
+//            parent.presentationMode.wrappedValue.dismiss()
         }
         
-        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            parent.presentationMode.wrappedValue.dismiss()
-        }
+//        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+//            parent.presentationMode.wrappedValue.dismiss()
+//        }
     }
 }
 

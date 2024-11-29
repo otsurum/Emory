@@ -75,7 +75,7 @@ private struct PhotoPickerView: View {
             }
         }
         .fullScreenCover(isPresented: $showCamera) {
-            CameraCaptureView(image: $image)
+            CameraCaptureView(image: $image, usingCamera: $showCamera)
                 .ignoresSafeArea()
         }
         .popover(isPresented: $showLibrary, content: {
