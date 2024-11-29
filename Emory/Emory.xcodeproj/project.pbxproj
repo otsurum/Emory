@@ -102,6 +102,7 @@
 		F38453702CF7FFC500C4354A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F35551522CF81D1C00F6841A /* TagListing.swift */,
 				F38453712CF7FFDF00C4354A /* PostListingElement.swift */,
 				F35551542CF81F2900F6841A /* TagSegment.swift */,
 			);
@@ -111,7 +112,6 @@
 		F38453752CF802BB00C4354A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F35551522CF81D1C00F6841A /* TagListing.swift */,
 				F38453762CF802E200C4354A /* Post.swift */,
 			);
 			path = Models;
