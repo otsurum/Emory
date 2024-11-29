@@ -50,7 +50,7 @@ struct PostedDetailView: View {
                 }
             }.padding(.bottom, 50)
                 
-            Text(post.getImage())
+//            Text(post.getImage())
     
             
         }

@@ -32,7 +32,7 @@ struct PostListingElement: View {
             
             HStack {
                 Spacer()
-                Text(post.getImage()).padding()
+//                Text(post.getImage()).padding()
                 Spacer()
             }.padding()
 

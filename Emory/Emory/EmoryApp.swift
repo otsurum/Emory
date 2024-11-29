@@ -11,7 +11,7 @@ import SwiftUI
 struct EmoryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PostingView()
         }
     }
 }
