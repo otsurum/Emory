@@ -17,6 +17,7 @@ struct TagListing:  View {
                 ForEach(tagList, id: \.self) { tag in
                     TagSegment(tagName: tag)
                         .padding()
+
 //                        .background(Color.black)
                 }
             }
