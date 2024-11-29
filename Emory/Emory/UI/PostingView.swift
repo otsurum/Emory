@@ -50,7 +50,17 @@ struct PostingView: View {
                         .clipped()
                         .padding()
                     
-                    
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            isPushedCamera = true
+                        }, label: {
+                            Image(systemName: "arrow.clockwise.circle")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .padding()
+                        })
+                    }
                     
                 } else {
                     Button(action: {
@@ -86,6 +96,14 @@ struct PostingView: View {
                 Button("ライブラリ") {
                     isSelectingImage = true
                 }
+                
+                if image != nil {
+                    Button("削除", role: .destructive) {
+                        image = Optional.none
+                        isPushedCamera = false
+                    }
+                }
+                
                 Button("閉じる", role: .cancel) {
                     isPushedCamera = false
                 }
