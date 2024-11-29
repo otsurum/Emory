@@ -50,7 +50,7 @@ struct PhotoLibraryPickerView: UIViewControllerRepresentable {
     }
 }
 
-struct PhotoPickerView: View {
+private struct PhotoPickerView: View {
     @State var image: UIImage?
     @State private var showImagePickerDialog = false
     @State private var showCamera: Bool = false

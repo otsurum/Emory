@@ -5,6 +5,7 @@
 //  Created by 鶴見駿 on 2024/11/28.
 //
 import Foundation
+import SwiftUI
 
 struct Post: Identifiable {
     let id = UUID()
@@ -12,7 +13,7 @@ struct Post: Identifiable {
     private let title: String
     private let tags: [String]
     private let owner: String
-    private let image: String
+    private var image: UIImage?
 }
 
 extension Post {
@@ -20,16 +21,16 @@ extension Post {
     // debug
     static func getExamplePostList() -> [Post] {
         return [
-            Post(title: "title0", tags: ["工大祭"], owner: "owner0", image: "image0"),
-            Post(title: "title1", tags: ["CS", "B3"], owner: "owner1", image: "image1"),
-            Post(title: "title2", tags: ["研究室", "院試", "過去問"], owner: "owner2", image: "image2"),
-            Post(title: "title3", tags: ["試験", "情報数学", "過去問", "情報工", "頑張れ"], owner: "owner3", image: "image3")
+            Post(title: "title0", tags: ["工大祭"], owner: "owner0"),
+            Post(title: "title1", tags: ["CS", "B3"], owner: "owner1"),
+            Post(title: "title2", tags: ["研究室", "院試", "過去問"], owner: "owner2"),
+            Post(title: "title3", tags: ["試験", "情報数学", "過去問", "情報工", "頑張れ"], owner: "owner3")
         ]
     }
     
     // debug
     static func getExamplePostObject() -> Post {
-        return Post(title: "title", tags: ["研究室見学", "2号館", "知能分野"], owner: "owner", image: "image")
+        return Post(title: "title", tags: ["研究室見学", "2号館", "知能分野"], owner: "owner")
     }
     
     func getTitle() -> String {
@@ -44,7 +45,11 @@ extension Post {
         return self.owner
     }
     
-    func getImage() -> String {
+    func getImage() -> UIImage? {
         return self.image
+    }
+    
+    mutating func putImage(_ image: UIImage) {
+        self.image = image
     }
 }
