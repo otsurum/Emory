@@ -44,11 +44,15 @@ struct PostingView: View {
                     .padding()
                 
                 if let image {
-                    Image(uiImage: image)
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .clipped()
+                    HStack {
+                        Spacer()
+                        Image(uiImage: image)
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .clipped()
                         .padding()
+                        Spacer()
+                    }
                     
                     HStack {
                         Spacer()
