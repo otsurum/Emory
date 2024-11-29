@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F313BF2E2CF7532A008E9FDE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F313BF2D2CF7532A008E9FDE /* ProfileView.swift */; };
 		F313BF302CF75783008E9FDE /* PostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F313BF2F2CF75783008E9FDE /* PostingView.swift */; };
+		F33CC4682CF9AA3E00487894 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CC4672CF9AA3E00487894 /* CameraCaptureView.swift */; };
+		F33CC46A2CF9AC2A00487894 /* PhotoLibraryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CC4692CF9AC2A00487894 /* PhotoLibraryPickerView.swift */; };
 		F35551532CF81D1C00F6841A /* TagListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35551522CF81D1C00F6841A /* TagListing.swift */; };
 		F35551552CF81F2900F6841A /* TagSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35551542CF81F2900F6841A /* TagSegment.swift */; };
 		F384536F2CF7FC2500C4354A /* PostedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F384536E2CF7FC2500C4354A /* PostedDetailView.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		F313BF2D2CF7532A008E9FDE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F313BF2F2CF75783008E9FDE /* PostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingView.swift; sourceTree = "<group>"; };
+		F33CC4672CF9AA3E00487894 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
+		F33CC4692CF9AC2A00487894 /* PhotoLibraryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPickerView.swift; sourceTree = "<group>"; };
 		F35551522CF81D1C00F6841A /* TagListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListing.swift; sourceTree = "<group>"; };
 		F35551542CF81F2900F6841A /* TagSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSegment.swift; sourceTree = "<group>"; };
 		F384536E2CF7FC2500C4354A /* PostedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostedDetailView.swift; sourceTree = "<group>"; };
@@ -99,10 +103,18 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		F33CC4642CF9A5C300487894 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				F33CC4672CF9AA3E00487894 /* CameraCaptureView.swift */,
+				F33CC4692CF9AC2A00487894 /* PhotoLibraryPickerView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		F38453702CF7FFC500C4354A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F35551522CF81D1C00F6841A /* TagListing.swift */,
 				F38453712CF7FFDF00C4354A /* PostListingElement.swift */,
 				F35551522CF81D1C00F6841A /* TagListing.swift */,
 				F35551542CF81F2900F6841A /* TagSegment.swift */,
@@ -143,6 +155,7 @@
 			children = (
 				F39D3BE22CF7340700E640A5 /* EmoryApp.swift */,
 				F39D3BE42CF7340700E640A5 /* ContentView.swift */,
+				F33CC4642CF9A5C300487894 /* Camera */,
 				F38453752CF802BB00C4354A /* Models */,
 				F313BF2C2CF73ECC008E9FDE /* UI */,
 				F39D3BE62CF7340800E640A5 /* Assets.xcassets */,
@@ -310,7 +323,9 @@
 				F39D3BE52CF7340700E640A5 /* ContentView.swift in Sources */,
 				F313BF2E2CF7532A008E9FDE /* ProfileView.swift in Sources */,
 				F313BF302CF75783008E9FDE /* PostingView.swift in Sources */,
+				F33CC46A2CF9AC2A00487894 /* PhotoLibraryPickerView.swift in Sources */,
 				F38453772CF802E200C4354A /* Post.swift in Sources */,
+				F33CC4682CF9AA3E00487894 /* CameraCaptureView.swift in Sources */,
 				F39D3BE32CF7340700E640A5 /* EmoryApp.swift in Sources */,
 				F35551552CF81F2900F6841A /* TagSegment.swift in Sources */,
 				F384536F2CF7FC2500C4354A /* PostedDetailView.swift in Sources */,
