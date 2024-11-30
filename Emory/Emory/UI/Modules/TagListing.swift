@@ -33,11 +33,15 @@ struct FlowLayout: Layout {
         for row in result.rows {
             let rowXOffset = (bounds.width - row.frame.width) * alignment.horizontal.percent // alignmentの値に応じてLayoutの左端からの幅を導出
             for index in row.range {
-                let xPos = rowXOffset + row.frame.minX + row.xOffsets[index - row.range.lowerBound] + bounds.minX
+                
+                // rowの左端からのオフセット、Row内でのsubviewのRow左端からのオフセット、Layout左端のキャンパスの左端からのオフセットを足す
+                let xPos = rowXOffset + row.frame.minX + row.xOffsets[index - row.range.lowerBound] + bounds.minX // XOffsetの導出ではRangeとした場合のrowの下限を現在のsubviewのindexから引く
+                
+                // 行内でのsubviewのalignmentを設定
                 let rowYAlignment = (row.frame.height - subviews[index].sizeThatFits(.unspecified).height) *
                 alignment.vertical.percent
-                let yPos = row.frame.minY + rowYAlignment + bounds.minY
-                subviews[index].place(at: CGPoint(x: xPos, y: yPos), anchor: .topLeading, proposal: .unspecified)
+                let yPos = row.frame.minY + rowYAlignment + bounds.minY // 行の上部のheight(bounds.minYが基準)、行内でのsubviewのalignment、layout全体のheightの和
+                subviews[index].place(at: CGPoint(x: xPos, y: yPos), anchor: .topLeading, proposal: .unspecified) // (width: x, height: y)を左上に基準としてsubviewをplaceする
             }
         }
     }
