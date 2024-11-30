@@ -8,14 +8,14 @@ import SwiftUI
 import SwiftData
 
 final class User {
-    let uuid = UUID().uuidString
-    var userName: String
-    var mailaddress: String
-    var FollowingList: [User]
-    var FollowerList: [User]
-    var likedPostList: [Post]
-    var repostedList: [Post]
-    var userIcon: UIImage?
+    private let uuid = UUID().uuidString
+    private var userName: String
+    private var mailaddress: String
+    private var FollowingList: [User]
+    private var FollowerList: [User]
+    private var likedPostList: [Post]
+    private var repostedList: [Post]
+    private var userIcon: UIImage?
     
     init(userName: String, mailaddress: String, FollowingList: [User], FollowerList: [User], likedPostList: [Post], repostedList: [Post], userIcon: UIImage? = nil) {
         self.userName = userName
