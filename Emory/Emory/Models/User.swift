@@ -7,7 +7,7 @@
 import SwiftUI
 import SwiftData
 
-class User {
+final class User {
 //    var name: String
     
 }

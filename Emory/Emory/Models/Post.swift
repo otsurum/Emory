@@ -7,7 +7,7 @@
 import Foundation
 import SwiftUI
 
-class Post: Identifiable {
+final class Post: Identifiable {
     let id = UUID().uuidString
     
     private let title: String
