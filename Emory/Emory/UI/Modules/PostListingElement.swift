@@ -21,14 +21,9 @@ struct PostListingElement: View {
                     Text(post.getOwer())
                 }.padding(.horizontal)
             }
-                    
-            HStack {
-                ForEach(post.getTags(), id: \.self) { tag in
-                    Text(tag)
-                        .foregroundStyle(Color.blue)
-                        
-                }
-            }.padding(.horizontal)
+            
+            TagListing(tagList: post.getTags())
+                .padding(.horizontal)
             
             HStack {
                 Spacer()
