@@ -27,7 +27,10 @@ struct PostListingElement: View {
             
             HStack {
                 Spacer()
-//                Text(post.getImage()).padding()
+                if let postedImage = post.getImage() {
+                    Image(uiImage: postedImage)
+                        .resizable()
+                }
                 Spacer()
             }.padding()
 

@@ -151,7 +151,6 @@ private extension VerticalAlignment {
 struct TagListing: View {
     let tagList: [String]
     var body: some View {
-        
         FlowLayout(alignment: .leading, spacing: 5) {
             ForEach(tagList, id: \.self) { tag in
                 TagSegment(tagName: tag)
