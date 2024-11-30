@@ -24,8 +24,6 @@ struct PostingView: View {
                     TextField("タイトル", text: $inputTitle)
                         .frame(width: 200, height: 50)
                         .font(.system(size: fontSizeOnText, weight: .bold))
-    //                    .textFieldStyle(.roundedBorder)
-    //                    .background(Color.gray.opacity(0.2))い
                         .overlay(
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke(Color.gray, lineWidth: 2)
@@ -80,7 +78,6 @@ struct PostingView: View {
                                     .resizable()
                                     .scaleEffect(1/2)
                             )
-                            
                     })
                 }
                 
