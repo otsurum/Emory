@@ -7,13 +7,20 @@
 import Foundation
 import SwiftUI
 
-struct Post: Identifiable {
+class Post: Identifiable {
     let id = UUID().uuidString
     
     private let title: String
     private let tags: [String]
     private let owner: String
     private var image: UIImage?
+    
+    init(title: String, tags: [String], owner: String, image: UIImage? = nil) {
+        self.title = title
+        self.tags = tags
+        self.owner = owner
+        self.image = image
+    }
 }
 
 extension Post {
