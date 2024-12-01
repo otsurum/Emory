@@ -22,7 +22,7 @@ struct PostedDetailView: View {
                 }, label: {
                     VStack {
 //                        Text(post)
-                        Text(post.getOwer())
+                        Text(post.getOwer().getUserName())
                     }.padding()
                 })
             }

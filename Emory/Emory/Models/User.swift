@@ -26,7 +26,9 @@ final class User {
         self.repostedList = repostedList
         self.userIcon = userIcon
     }
-    
+}
+
+extension User {
     func getUserName() -> String {
         userName
     }
@@ -53,5 +55,9 @@ final class User {
     
     func getUserIcon() -> UIImage? {
         userIcon
+    }
+    
+    static func getExampleUser() -> User {
+        User(userName: "あきら", mailAddress: "none", followingUserList: [], followerList: [], likedPostList: [], repostedList: [])
     }
 }

@@ -18,7 +18,7 @@ struct PostListingElement: View {
                 Spacer()
                 VStack {
                     
-                    Text(post.getOwer())
+                    Text(post.getOwer().getUserName())
                 }.padding(.horizontal)
             }
             
