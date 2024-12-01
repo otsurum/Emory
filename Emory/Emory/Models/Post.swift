@@ -37,26 +37,26 @@ extension Post {
     
     // debug
     static func getExamplePostObject() -> Post {
-        return Post(title: "title", tags: ["研究室見学", "2号館", "知能分野"], owner: "owner")
+        Post(title: "title", tags: ["研究室見学", "2号館", "知能分野"], owner: "owner")
     }
     
     func getTitle() -> String {
-        return self.title
+        title
     }
     
     func getTags() -> [String] {
-        return self.tags
+        tags
     }
     
     func getOwer() -> String {
-        return self.owner
+        owner
     }
     
     func getImage() -> UIImage? {
-        return self.image
+        image
     }
     
-    mutating func putImage(_ image: UIImage) {
+    func putImage(_ image: UIImage) {
         self.image = image
     }
 }
