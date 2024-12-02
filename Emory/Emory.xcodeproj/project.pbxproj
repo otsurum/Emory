@@ -24,6 +24,7 @@
 		F39D3BF42CF7340900E640A5 /* EmoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BF32CF7340900E640A5 /* EmoryTests.swift */; };
 		F39D3BFE2CF7340900E640A5 /* EmoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BFD2CF7340900E640A5 /* EmoryUITests.swift */; };
 		F39D3C002CF7340900E640A5 /* EmoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BFF2CF7340900E640A5 /* EmoryUITestsLaunchTests.swift */; };
+		F3D51B3F2CFBD73300FFBCE3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D51B3E2CFBD73300FFBCE3 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F39D3BF92CF7340900E640A5 /* EmoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D3BFD2CF7340900E640A5 /* EmoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryUITests.swift; sourceTree = "<group>"; };
 		F39D3BFF2CF7340900E640A5 /* EmoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3D51B3E2CFBD73300FFBCE3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				F38453762CF802E200C4354A /* Post.swift */,
+				F3D51B3E2CFBD73300FFBCE3 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D51B3F2CFBD73300FFBCE3 /* User.swift in Sources */,
 				F35551532CF81D1C00F6841A /* TagListing.swift in Sources */,
 				F39D3BE52CF7340700E640A5 /* ContentView.swift in Sources */,
 				F313BF2E2CF7532A008E9FDE /* ProfileView.swift in Sources */,
