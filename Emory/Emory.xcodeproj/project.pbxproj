@@ -18,6 +18,7 @@
 		F38453742CF8019F00C4354A /* PostListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38453732CF8019F00C4354A /* PostListingView.swift */; };
 		F38453772CF802E200C4354A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38453762CF802E200C4354A /* Post.swift */; };
 		F3987F7B2D00769D00AEF0F8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F3987F7A2D00769D00AEF0F8 /* FirebaseAuth */; };
+		F3987F7D2D00776E00AEF0F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3987F7C2D00776E00AEF0F8 /* GoogleService-Info.plist */; };
 		F39D3BE32CF7340700E640A5 /* EmoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BE22CF7340700E640A5 /* EmoryApp.swift */; };
 		F39D3BE52CF7340700E640A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BE42CF7340700E640A5 /* ContentView.swift */; };
 		F39D3BE72CF7340800E640A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D3BE62CF7340800E640A5 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		F38453712CF7FFDF00C4354A /* PostListingElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingElement.swift; sourceTree = "<group>"; };
 		F38453732CF8019F00C4354A /* PostListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingView.swift; sourceTree = "<group>"; };
 		F38453762CF802E200C4354A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F3987F7C2D00776E00AEF0F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F39D3BDF2CF7340700E640A5 /* Emory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D3BE22CF7340700E640A5 /* EmoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryApp.swift; sourceTree = "<group>"; };
 		F39D3BE42CF7340700E640A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		F39D3BD62CF7340700E640A5 = {
 			isa = PBXGroup;
 			children = (
+				F3987F7C2D00776E00AEF0F8 /* GoogleService-Info.plist */,
 				F39D3BE12CF7340700E640A5 /* Emory */,
 				F39D3BF22CF7340900E640A5 /* EmoryTests */,
 				F39D3BFC2CF7340900E640A5 /* EmoryUITests */,
@@ -308,6 +311,7 @@
 			files = (
 				F39D3BEA2CF7340800E640A5 /* Preview Assets.xcassets in Resources */,
 				F39D3BE72CF7340800E640A5 /* Assets.xcassets in Resources */,
+				F3987F7D2D00776E00AEF0F8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
