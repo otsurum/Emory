@@ -19,6 +19,7 @@
 		F38453772CF802E200C4354A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38453762CF802E200C4354A /* Post.swift */; };
 		F3987F7B2D00769D00AEF0F8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F3987F7A2D00769D00AEF0F8 /* FirebaseAuth */; };
 		F3987F7D2D00776E00AEF0F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3987F7C2D00776E00AEF0F8 /* GoogleService-Info.plist */; };
+		F3987F802D00781900AEF0F8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F3987F7F2D00781900AEF0F8 /* FirebaseAnalytics */; };
 		F39D3BE32CF7340700E640A5 /* EmoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BE22CF7340700E640A5 /* EmoryApp.swift */; };
 		F39D3BE52CF7340700E640A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BE42CF7340700E640A5 /* ContentView.swift */; };
 		F39D3BE72CF7340800E640A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D3BE62CF7340800E640A5 /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3987F802D00781900AEF0F8 /* FirebaseAnalytics in Frameworks */,
 				F3987F7B2D00769D00AEF0F8 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +140,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F3987F7E2D00781900AEF0F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F39D3BD62CF7340700E640A5 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +155,7 @@
 				F39D3BF22CF7340900E640A5 /* EmoryTests */,
 				F39D3BFC2CF7340900E640A5 /* EmoryUITests */,
 				F39D3BE02CF7340700E640A5 /* Products */,
+				F3987F7E2D00781900AEF0F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +227,7 @@
 			name = Emory;
 			packageProductDependencies = (
 				F3987F7A2D00769D00AEF0F8 /* FirebaseAuth */,
+				F3987F7F2D00781900AEF0F8 /* FirebaseAnalytics */,
 			);
 			productName = Emory;
 			productReference = F39D3BDF2CF7340700E640A5 /* Emory.app */;
@@ -697,6 +708,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F3987F792D00769D00AEF0F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		F3987F7F2D00781900AEF0F8 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3987F792D00769D00AEF0F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
