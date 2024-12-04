@@ -24,7 +24,8 @@ struct EmoryApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                PostingView()
+//                PostingView()
+                LogInView(viewModel: AuthViewModel())
             }
         }
     }

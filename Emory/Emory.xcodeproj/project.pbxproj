@@ -29,6 +29,10 @@
 		F39D3BFE2CF7340900E640A5 /* EmoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BFD2CF7340900E640A5 /* EmoryUITests.swift */; };
 		F39D3C002CF7340900E640A5 /* EmoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BFF2CF7340900E640A5 /* EmoryUITestsLaunchTests.swift */; };
 		F3D51B3F2CFBD73300FFBCE3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D51B3E2CFBD73300FFBCE3 /* User.swift */; };
+		F3DC17882D0090380026ACFA /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC17872D0090380026ACFA /* LogInView.swift */; };
+		F3DC178A2D0091670026ACFA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC17892D0091670026ACFA /* SignUpView.swift */; };
+		F3DC178C2D0091EE0026ACFA /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC178B2D0091EE0026ACFA /* ResetPasswordView.swift */; };
+		F3DC178E2D0092910026ACFA /* AfterLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC178D2D0092910026ACFA /* AfterLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		F39D3BFD2CF7340900E640A5 /* EmoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryUITests.swift; sourceTree = "<group>"; };
 		F39D3BFF2CF7340900E640A5 /* EmoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F3D51B3E2CFBD73300FFBCE3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F3DC17872D0090380026ACFA /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		F3DC17892D0091670026ACFA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F3DC178B2D0091EE0026ACFA /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		F3DC178D2D0092910026ACFA /* AfterLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 		F3987F812D0081C700AEF0F8 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				F3DC17862D008F2B0026ACFA /* UI */,
 				F3987F822D0081DA00AEF0F8 /* Models */,
 			);
 			path = Auth;
@@ -226,6 +235,17 @@
 				F39D3BFF2CF7340900E640A5 /* EmoryUITestsLaunchTests.swift */,
 			);
 			path = EmoryUITests;
+			sourceTree = "<group>";
+		};
+		F3DC17862D008F2B0026ACFA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F3DC17872D0090380026ACFA /* LogInView.swift */,
+				F3DC17892D0091670026ACFA /* SignUpView.swift */,
+				F3DC178B2D0091EE0026ACFA /* ResetPasswordView.swift */,
+				F3DC178D2D0092910026ACFA /* AfterLoginView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3DC17882D0090380026ACFA /* LogInView.swift in Sources */,
 				F3D51B3F2CFBD73300FFBCE3 /* User.swift in Sources */,
 				F35551532CF81D1C00F6841A /* TagListing.swift in Sources */,
 				F39D3BE52CF7340700E640A5 /* ContentView.swift in Sources */,
@@ -376,10 +397,13 @@
 				F33CC4682CF9AA3E00487894 /* CameraCaptureView.swift in Sources */,
 				F39D3BE32CF7340700E640A5 /* EmoryApp.swift in Sources */,
 				F35551552CF81F2900F6841A /* TagSegment.swift in Sources */,
+				F3DC178E2D0092910026ACFA /* AfterLoginView.swift in Sources */,
 				F3987F842D00828700AEF0F8 /* AuthViewModel.swift in Sources */,
+				F3DC178A2D0091670026ACFA /* SignUpView.swift in Sources */,
 				F384536F2CF7FC2500C4354A /* PostedDetailView.swift in Sources */,
 				F38453722CF7FFDF00C4354A /* PostListingElement.swift in Sources */,
 				F38453742CF8019F00C4354A /* PostListingView.swift in Sources */,
+				F3DC178C2D0091EE0026ACFA /* ResetPasswordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
