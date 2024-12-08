@@ -22,7 +22,7 @@ struct LogInView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
-            Button("Sign In") {
+            Button("ログイン") {
                 viewModel.signIn(email: email, password: password)
             }
             
@@ -31,14 +31,14 @@ struct LogInView: View {
             }
             
             NavigationLink(destination: SignUpView(viewModel: viewModel)) {
-                Text("Create New Account")
+                Text("新規はこちらから")
                     .font(.title3)
                     .padding()
 //                    .bold()
             }
             
             NavigationLink(destination: ResetPasswordView(viewModel: viewModel)) {
-                Text("Reset Password")
+                Text("パスワードを忘れた場合")
                     .font(.title3)
                     .padding()
             }
@@ -46,6 +46,6 @@ struct LogInView: View {
     }
 }
 
-//#Preview {
-//    LogInView()
-//}
+#Preview {
+    LogInView(viewModel: AuthViewModel())
+}
