@@ -23,9 +23,9 @@ struct LogInView: View {
                 .padding()
             
             
-            if viewModel.isAuthenticated {
-                AfterLoginView(viewModel: viewModel)
-            }
+//            if viewModel.isAuthenticated {
+//                AfterLoginView(viewModel: viewModel)
+//            }
             
             AuthErrorText(viewModel.errorMessage)
             

@@ -31,9 +31,9 @@ struct SignUpView: View {
                 viewModel.signUp(email: email, password: password)
             }
             
-            if viewModel.isAuthenticated {
-                AfterLoginView(viewModel: viewModel)
-            }
+//            if viewModel.isAuthenticated {
+//                AfterLoginView(viewModel: viewModel)
+//            }
         }
     }
 }

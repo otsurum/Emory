@@ -27,6 +27,7 @@ final class AuthViewModel: ObservableObject {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
             self?.errorHandling(error)
         }
+        self.isAuthenticated = true
     }
     
     func signUp(email: String, password: String) {
