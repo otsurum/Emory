@@ -17,6 +17,10 @@
 		F38453722CF7FFDF00C4354A /* PostListingElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38453712CF7FFDF00C4354A /* PostListingElement.swift */; };
 		F38453742CF8019F00C4354A /* PostListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38453732CF8019F00C4354A /* PostListingView.swift */; };
 		F38453772CF802E200C4354A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38453762CF802E200C4354A /* Post.swift */; };
+		F3987F7B2D00769D00AEF0F8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F3987F7A2D00769D00AEF0F8 /* FirebaseAuth */; };
+		F3987F7D2D00776E00AEF0F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3987F7C2D00776E00AEF0F8 /* GoogleService-Info.plist */; };
+		F3987F802D00781900AEF0F8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F3987F7F2D00781900AEF0F8 /* FirebaseAnalytics */; };
+		F3987F842D00828700AEF0F8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3987F832D00828700AEF0F8 /* AuthViewModel.swift */; };
 		F39D3BE32CF7340700E640A5 /* EmoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BE22CF7340700E640A5 /* EmoryApp.swift */; };
 		F39D3BE52CF7340700E640A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BE42CF7340700E640A5 /* ContentView.swift */; };
 		F39D3BE72CF7340800E640A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D3BE62CF7340800E640A5 /* Assets.xcassets */; };
@@ -24,7 +28,12 @@
 		F39D3BF42CF7340900E640A5 /* EmoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BF32CF7340900E640A5 /* EmoryTests.swift */; };
 		F39D3BFE2CF7340900E640A5 /* EmoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BFD2CF7340900E640A5 /* EmoryUITests.swift */; };
 		F39D3C002CF7340900E640A5 /* EmoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BFF2CF7340900E640A5 /* EmoryUITestsLaunchTests.swift */; };
+		F3A4BA972D05649A003D884E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4BA962D05649A003D884E /* View.swift */; };
 		F3D51B3F2CFBD73300FFBCE3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D51B3E2CFBD73300FFBCE3 /* User.swift */; };
+		F3DC17882D0090380026ACFA /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC17872D0090380026ACFA /* LogInView.swift */; };
+		F3DC178A2D0091670026ACFA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC17892D0091670026ACFA /* SignUpView.swift */; };
+		F3DC178C2D0091EE0026ACFA /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC178B2D0091EE0026ACFA /* ResetPasswordView.swift */; };
+		F3DC178E2D0092910026ACFA /* AfterLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC178D2D0092910026ACFA /* AfterLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +65,8 @@
 		F38453712CF7FFDF00C4354A /* PostListingElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingElement.swift; sourceTree = "<group>"; };
 		F38453732CF8019F00C4354A /* PostListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingView.swift; sourceTree = "<group>"; };
 		F38453762CF802E200C4354A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F3987F7C2D00776E00AEF0F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3987F832D00828700AEF0F8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		F39D3BDF2CF7340700E640A5 /* Emory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D3BE22CF7340700E640A5 /* EmoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryApp.swift; sourceTree = "<group>"; };
 		F39D3BE42CF7340700E640A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,7 +77,12 @@
 		F39D3BF92CF7340900E640A5 /* EmoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D3BFD2CF7340900E640A5 /* EmoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryUITests.swift; sourceTree = "<group>"; };
 		F39D3BFF2CF7340900E640A5 /* EmoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3A4BA962D05649A003D884E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		F3D51B3E2CFBD73300FFBCE3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F3DC17872D0090380026ACFA /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		F3DC17892D0091670026ACFA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F3DC178B2D0091EE0026ACFA /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		F3DC178D2D0092910026ACFA /* AfterLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3987F802D00781900AEF0F8 /* FirebaseAnalytics in Frameworks */,
+				F3987F7B2D00769D00AEF0F8 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,13 +152,39 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F3987F7E2D00781900AEF0F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3987F812D0081C700AEF0F8 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F3DC17862D008F2B0026ACFA /* UI */,
+				F3987F822D0081DA00AEF0F8 /* Models */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F3987F822D0081DA00AEF0F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3987F832D00828700AEF0F8 /* AuthViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F39D3BD62CF7340700E640A5 = {
 			isa = PBXGroup;
 			children = (
+				F3987F7C2D00776E00AEF0F8 /* GoogleService-Info.plist */,
 				F39D3BE12CF7340700E640A5 /* Emory */,
 				F39D3BF22CF7340900E640A5 /* EmoryTests */,
 				F39D3BFC2CF7340900E640A5 /* EmoryUITests */,
 				F39D3BE02CF7340700E640A5 /* Products */,
+				F3987F7E2D00781900AEF0F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,7 +203,9 @@
 			children = (
 				F35157362CF9E0D2008EBB23 /* Info.plist */,
 				F39D3BE22CF7340700E640A5 /* EmoryApp.swift */,
+				F3A4BA952D05648F003D884E /* Extensions */,
 				F39D3BE42CF7340700E640A5 /* ContentView.swift */,
+				F3987F812D0081C700AEF0F8 /* Auth */,
 				F33CC4642CF9A5C300487894 /* Camera */,
 				F38453752CF802BB00C4354A /* Models */,
 				F313BF2C2CF73ECC008E9FDE /* UI */,
@@ -194,6 +240,25 @@
 			path = EmoryUITests;
 			sourceTree = "<group>";
 		};
+		F3A4BA952D05648F003D884E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3A4BA962D05649A003D884E /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3DC17862D008F2B0026ACFA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F3DC17872D0090380026ACFA /* LogInView.swift */,
+				F3DC17892D0091670026ACFA /* SignUpView.swift */,
+				F3DC178B2D0091EE0026ACFA /* ResetPasswordView.swift */,
+				F3DC178D2D0092910026ACFA /* AfterLoginView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,6 +275,10 @@
 			dependencies = (
 			);
 			name = Emory;
+			packageProductDependencies = (
+				F3987F7A2D00769D00AEF0F8 /* FirebaseAuth */,
+				F3987F7F2D00781900AEF0F8 /* FirebaseAnalytics */,
+			);
 			productName = Emory;
 			productReference = F39D3BDF2CF7340700E640A5 /* Emory.app */;
 			productType = "com.apple.product-type.application";
@@ -282,6 +351,9 @@
 				Base,
 			);
 			mainGroup = F39D3BD62CF7340700E640A5;
+			packageReferences = (
+				F3987F792D00769D00AEF0F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = F39D3BE02CF7340700E640A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,6 +372,7 @@
 			files = (
 				F39D3BEA2CF7340800E640A5 /* Preview Assets.xcassets in Resources */,
 				F39D3BE72CF7340800E640A5 /* Assets.xcassets in Resources */,
+				F3987F7D2D00776E00AEF0F8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,19 +397,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3DC17882D0090380026ACFA /* LogInView.swift in Sources */,
 				F3D51B3F2CFBD73300FFBCE3 /* User.swift in Sources */,
 				F35551532CF81D1C00F6841A /* TagListing.swift in Sources */,
 				F39D3BE52CF7340700E640A5 /* ContentView.swift in Sources */,
 				F313BF2E2CF7532A008E9FDE /* ProfileView.swift in Sources */,
 				F313BF302CF75783008E9FDE /* PostingView.swift in Sources */,
+				F3A4BA972D05649A003D884E /* View.swift in Sources */,
 				F33CC46A2CF9AC2A00487894 /* PhotoLibraryPickerView.swift in Sources */,
 				F38453772CF802E200C4354A /* Post.swift in Sources */,
 				F33CC4682CF9AA3E00487894 /* CameraCaptureView.swift in Sources */,
 				F39D3BE32CF7340700E640A5 /* EmoryApp.swift in Sources */,
 				F35551552CF81F2900F6841A /* TagSegment.swift in Sources */,
+				F3DC178E2D0092910026ACFA /* AfterLoginView.swift in Sources */,
+				F3987F842D00828700AEF0F8 /* AuthViewModel.swift in Sources */,
+				F3DC178A2D0091670026ACFA /* SignUpView.swift in Sources */,
 				F384536F2CF7FC2500C4354A /* PostedDetailView.swift in Sources */,
 				F38453722CF7FFDF00C4354A /* PostListingElement.swift in Sources */,
 				F38453742CF8019F00C4354A /* PostListingView.swift in Sources */,
+				F3DC178C2D0091EE0026ACFA /* ResetPasswordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,6 +747,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3987F792D00769D00AEF0F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3987F7A2D00769D00AEF0F8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3987F792D00769D00AEF0F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F3987F7F2D00781900AEF0F8 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3987F792D00769D00AEF0F8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F39D3BD72CF7340700E640A5 /* Project object */;
 }
