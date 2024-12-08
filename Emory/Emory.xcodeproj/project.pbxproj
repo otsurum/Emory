@@ -22,7 +22,6 @@
 		F3987F802D00781900AEF0F8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F3987F7F2D00781900AEF0F8 /* FirebaseAnalytics */; };
 		F3987F842D00828700AEF0F8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3987F832D00828700AEF0F8 /* AuthViewModel.swift */; };
 		F39D3BE32CF7340700E640A5 /* EmoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BE22CF7340700E640A5 /* EmoryApp.swift */; };
-		F39D3BE52CF7340700E640A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BE42CF7340700E640A5 /* ContentView.swift */; };
 		F39D3BE72CF7340800E640A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D3BE62CF7340800E640A5 /* Assets.xcassets */; };
 		F39D3BEA2CF7340800E640A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F39D3BE92CF7340800E640A5 /* Preview Assets.xcassets */; };
 		F39D3BF42CF7340900E640A5 /* EmoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BF32CF7340900E640A5 /* EmoryTests.swift */; };
@@ -71,7 +70,6 @@
 		F3987F832D00828700AEF0F8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		F39D3BDF2CF7340700E640A5 /* Emory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F39D3BE22CF7340700E640A5 /* EmoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryApp.swift; sourceTree = "<group>"; };
-		F39D3BE42CF7340700E640A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F39D3BE62CF7340800E640A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F39D3BE92CF7340800E640A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F39D3BEF2CF7340900E640A5 /* EmoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,7 +208,6 @@
 				F39D3BE22CF7340700E640A5 /* EmoryApp.swift */,
 				F3A4BA982D0569A0003D884E /* UserSettings */,
 				F3A4BA952D05648F003D884E /* Extensions */,
-				F39D3BE42CF7340700E640A5 /* ContentView.swift */,
 				F3987F812D0081C700AEF0F8 /* Auth */,
 				F33CC4642CF9A5C300487894 /* Camera */,
 				F38453752CF802BB00C4354A /* Models */,
@@ -423,7 +420,6 @@
 				F3DC17882D0090380026ACFA /* LogInView.swift in Sources */,
 				F3D51B3F2CFBD73300FFBCE3 /* User.swift in Sources */,
 				F35551532CF81D1C00F6841A /* TagListing.swift in Sources */,
-				F39D3BE52CF7340700E640A5 /* ContentView.swift in Sources */,
 				F313BF2E2CF7532A008E9FDE /* ProfileView.swift in Sources */,
 				F313BF302CF75783008E9FDE /* PostingView.swift in Sources */,
 				F3A4BA972D05649A003D884E /* View.swift in Sources */,
