@@ -15,6 +15,11 @@ struct UserSettingsView: View {
                     Text("メールアドレス:")
                     Text("パスワード変更")
                 }
+                
+                Section {
+                    Text("ユーザー名変更")
+                }
+                
                 Section {
                     Text("ログアウト")
                         .foregroundStyle(.red)
