@@ -29,6 +29,7 @@
 		F39D3BFE2CF7340900E640A5 /* EmoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BFD2CF7340900E640A5 /* EmoryUITests.swift */; };
 		F39D3C002CF7340900E640A5 /* EmoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39D3BFF2CF7340900E640A5 /* EmoryUITestsLaunchTests.swift */; };
 		F3A4BA972D05649A003D884E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4BA962D05649A003D884E /* View.swift */; };
+		F3A4BA9B2D0569F2003D884E /* UserSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4BA9A2D0569F2003D884E /* UserSettingsView.swift */; };
 		F3D51B3F2CFBD73300FFBCE3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D51B3E2CFBD73300FFBCE3 /* User.swift */; };
 		F3DC17882D0090380026ACFA /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC17872D0090380026ACFA /* LogInView.swift */; };
 		F3DC178A2D0091670026ACFA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC17892D0091670026ACFA /* SignUpView.swift */; };
@@ -78,6 +79,7 @@
 		F39D3BFD2CF7340900E640A5 /* EmoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryUITests.swift; sourceTree = "<group>"; };
 		F39D3BFF2CF7340900E640A5 /* EmoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F3A4BA962D05649A003D884E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		F3A4BA9A2D0569F2003D884E /* UserSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsView.swift; sourceTree = "<group>"; };
 		F3D51B3E2CFBD73300FFBCE3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F3DC17872D0090380026ACFA /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		F3DC17892D0091670026ACFA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			children = (
 				F35157362CF9E0D2008EBB23 /* Info.plist */,
 				F39D3BE22CF7340700E640A5 /* EmoryApp.swift */,
+				F3A4BA982D0569A0003D884E /* UserSettings */,
 				F3A4BA952D05648F003D884E /* Extensions */,
 				F39D3BE42CF7340700E640A5 /* ContentView.swift */,
 				F3987F812D0081C700AEF0F8 /* Auth */,
@@ -246,6 +249,22 @@
 				F3A4BA962D05649A003D884E /* View.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3A4BA982D0569A0003D884E /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				F3A4BA992D0569C0003D884E /* UI */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+		F3A4BA992D0569C0003D884E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F3A4BA9A2D0569F2003D884E /* UserSettingsView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		F3DC17862D008F2B0026ACFA /* UI */ = {
@@ -397,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A4BA9B2D0569F2003D884E /* UserSettingsView.swift in Sources */,
 				F3DC17882D0090380026ACFA /* LogInView.swift in Sources */,
 				F3D51B3F2CFBD73300FFBCE3 /* User.swift in Sources */,
 				F35551532CF81D1C00F6841A /* TagListing.swift in Sources */,
