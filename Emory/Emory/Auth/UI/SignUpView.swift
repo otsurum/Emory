@@ -25,6 +25,8 @@ struct SignUpView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
+            AuthErrorText(viewModel.errorMessage)
+            
             Button("登録") {
                 viewModel.signUp(email: email, password: password)
             }

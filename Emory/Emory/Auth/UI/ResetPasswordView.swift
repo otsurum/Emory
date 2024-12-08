@@ -17,6 +17,8 @@ struct ResetPasswordView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
+            AuthErrorText(viewModel.errorMessage)
+            
             Button("リセット用のメール送信") {
                 viewModel.resetPassword(email: email)
             }

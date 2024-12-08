@@ -66,6 +66,8 @@ final class AuthViewModel: ObservableObject {
         if let authErrorCode = AuthErrorCode(rawValue: nsError.code) {
             
             switch authErrorCode {
+            case .userNotFound:
+                return "メールアカウントが見つかりません"
             case .invalidEmail:
                 return "メールアドレスが正しくありません"
             case .userDisabled:
@@ -80,8 +82,6 @@ final class AuthViewModel: ObservableObject {
                 return "メールアドレスとパスワードを使用するアカウントが有効ではありません"
             case .networkError:
                 return "ネットワークエラー"
-            case .userNotFound:
-                return "このアカウントは削除されています"
             default:
                 return "unknownError"
             }

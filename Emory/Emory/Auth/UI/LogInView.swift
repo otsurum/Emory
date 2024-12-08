@@ -22,12 +22,15 @@ struct LogInView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
-            Button("ログイン") {
-                viewModel.signIn(email: email, password: password)
-            }
             
             if viewModel.isAuthenticated {
                 AfterLoginView(viewModel: viewModel)
+            }
+            
+            AuthErrorText(viewModel.errorMessage)
+            
+            Button("ログイン") {
+                viewModel.signIn(email: email, password: password)
             }
             
             NavigationLink(destination: SignUpView(viewModel: viewModel)) {
