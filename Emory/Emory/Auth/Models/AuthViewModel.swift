@@ -25,33 +25,19 @@ final class AuthViewModel: ObservableObject {
     
     func signIn(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
-            if let error = error {
-                self?.errorMessage = self?.createErrormessageFromSignIn(error)
-            } else {
-                self?.isAuthenticated = true
-                self?.errorMessage = nil
-                return
-            }
+            self?.errorHandling(error)
         }
     }
     
     func signUp(email: String, password: String) {
-        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
-            guard let result = result else { return }
-            guard let error = error else {
-                self?.isAuthenticated = true
-                return
-            }
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] _, error in
+            self?.errorHandling(error)
         }
     }
     
     func resetPassword(email: String) {
         Auth.auth().sendPasswordReset(withEmail: email) { error in
-            guard let error = error else {
-                return
-            }
-            
-            // resetのエラー処理
+            self.errorHandling(error)
         }
     }
     
@@ -59,12 +45,22 @@ final class AuthViewModel: ObservableObject {
         do {
             try Auth.auth().signOut()
             isAuthenticated = false
-        } catch let signOutError as NSError {
-            // NSError発生時の処理
+            self.errorMessage = nil
+        } catch {
+            self.errorMessage = self.createErrormessageFromAuth(error)
         }
     }
     
-    private func createErrormessageFromSignIn(_ error: Error) -> String {
+    private func errorHandling(_ error: Error?) {
+        guard let error = error else {
+            self.errorMessage = nil
+            return
+        }
+
+        self.errorMessage = self.createErrormessageFromAuth(error)
+    }
+    
+    private func createErrormessageFromAuth(_ error: Error) -> String {
         let nsError = error as NSError
         
         if let authErrorCode = AuthErrorCode(rawValue: nsError.code) {
@@ -76,6 +72,16 @@ final class AuthViewModel: ObservableObject {
                 return "メールアカウントが無効になっています"
             case .wrongPassword:
                 return "パスワードが間違っています"
+            case .emailAlreadyInUse:
+                return "メールアカウントが既に登録されています。必要に応じてパスワードリセットを試みてください"
+            case .weakPassword:
+                return "パスワードは8文字以上で、大文字と小文字を含めてください"
+            case .operationNotAllowed:
+                return "メールアドレスとパスワードを使用するアカウントが有効ではありません"
+            case .networkError:
+                return "ネットワークエラー"
+            case .userNotFound:
+                return "このアカウントは削除されています"
             default:
                 return "unknownError"
             }
