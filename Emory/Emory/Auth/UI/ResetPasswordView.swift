@@ -17,13 +17,13 @@ struct ResetPasswordView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
-            Button("Reset Password") {
+            Button("リセット用のメール送信") {
                 viewModel.resetPassword(email: email)
             }
         }
     }
 }
 
-//#Preview {
-//    ResetPasswordView()
-//}
+#Preview {
+    ResetPasswordView(viewModel: AuthViewModel())
+}

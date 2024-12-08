@@ -14,6 +14,9 @@ struct SignUpView: View {
     
     var body: some View {
         VStack {
+            Text("アカウント作成")
+                .font(.largeTitle)
+            
             TextField("Email", text: $email)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
@@ -22,7 +25,7 @@ struct SignUpView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
-            Button("Sign Up") {
+            Button("登録") {
                 viewModel.signUp(email: email, password: password)
             }
             
@@ -33,6 +36,6 @@ struct SignUpView: View {
     }
 }
 
-//#Preview {
-//    SignUpView()
-//}
+#Preview {
+    SignUpView(viewModel: AuthViewModel())
+}

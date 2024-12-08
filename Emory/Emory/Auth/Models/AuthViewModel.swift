@@ -11,6 +11,7 @@ import Foundation
 @MainActor
 final class AuthViewModel: ObservableObject {
     @Published var isAuthenticated = false
+    @Published var errorMessage: String?
     
     init() {
         observeAuthChanges()
@@ -24,9 +25,11 @@ final class AuthViewModel: ObservableObject {
     
     func signIn(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
-            guard let result = result else { return }
-            guard let error = error else {
+            if let error = error {
+                self?.errorMessage = self?.createErrormessageFromSignIn(error)
+            } else {
                 self?.isAuthenticated = true
+                self?.errorMessage = nil
                 return
             }
         }
@@ -58,6 +61,26 @@ final class AuthViewModel: ObservableObject {
             isAuthenticated = false
         } catch let signOutError as NSError {
             // NSError発生時の処理
+        }
+    }
+    
+    private func createErrormessageFromSignIn(_ error: Error) -> String {
+        let nsError = error as NSError
+        
+        if let authErrorCode = AuthErrorCode(rawValue: nsError.code) {
+            
+            switch authErrorCode {
+            case .invalidEmail:
+                return "メールアドレスが正しくありません"
+            case .userDisabled:
+                return "メールアカウントが無効になっています"
+            case .wrongPassword:
+                return "パスワードが間違っています"
+            default:
+                return "unknownError"
+            }
+        } else {
+            return "unknownError"
         }
     }
 }
