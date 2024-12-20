@@ -20,7 +20,7 @@ final class Post: Identifiable {
         self.title = title
         self.tags = tags
         self.owner = owner
-        self.image = image == nil ? image!.convertToData() : nil
+        self.image = image != nil ? image!.convertToData() : nil
     }
 }
 
