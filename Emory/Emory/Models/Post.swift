@@ -14,13 +14,13 @@ final class Post: Identifiable {
     private var title: String
     private var tags: [String]
     private var owner: User
-    private var image: UIImage?
+    private var image: Data?
     
     init(title: String, tags: [String], owner: User, image: UIImage? = nil) {
         self.title = title
         self.tags = tags
         self.owner = owner
-        self.image = image
+        self.image = image == nil ? image!.convertToData() : nil
     }
 }
 
@@ -53,11 +53,7 @@ extension Post {
         owner
     }
     
-    func getImage() -> UIImage? {
-        image
-    }
-    
-    func putImage(_ image: UIImage) {
-        self.image = image
+    func getUIImage() -> UIImage? {
+        image?.convertToUIImage()
     }
 }
