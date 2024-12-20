@@ -7,8 +7,9 @@
 import SwiftUI
 import SwiftData
 
+@Model
 final class User {
-    private let uuid = UUID().uuidString
+    private var uuid = UUID().uuidString
     private var userName: String
     private var mailAddress: String
     private var followingUserList: [User]

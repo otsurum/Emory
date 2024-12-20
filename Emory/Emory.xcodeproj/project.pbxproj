@@ -66,6 +66,7 @@
 		F38453712CF7FFDF00C4354A /* PostListingElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingElement.swift; sourceTree = "<group>"; };
 		F38453732CF8019F00C4354A /* PostListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingView.swift; sourceTree = "<group>"; };
 		F38453762CF802E200C4354A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F38C437E2D1533A20054D10D /* Emory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emory.entitlements; sourceTree = "<group>"; };
 		F3987F7C2D00776E00AEF0F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3987F832D00828700AEF0F8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		F39D3BDF2CF7340700E640A5 /* Emory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +205,7 @@
 		F39D3BE12CF7340700E640A5 /* Emory */ = {
 			isa = PBXGroup;
 			children = (
+				F38C437E2D1533A20054D10D /* Emory.entitlements */,
 				F35157362CF9E0D2008EBB23 /* Info.plist */,
 				F39D3BE22CF7340700E640A5 /* EmoryApp.swift */,
 				F3A4BA982D0569A0003D884E /* UserSettings */,
@@ -596,6 +598,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Emory/Emory.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Emory/Preview Content\"";
@@ -603,6 +606,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Emory/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "taking images for posting in this app";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "choosing images in user's library for postinng in this app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -626,6 +631,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Emory/Emory.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Emory/Preview Content\"";
@@ -633,6 +639,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Emory/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "taking images for posting in this app";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "choosing images in user's library for postinng in this app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

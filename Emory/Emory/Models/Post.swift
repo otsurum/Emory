@@ -4,15 +4,16 @@
 //
 //  Created by 鶴見駿 on 2024/11/28.
 //
-import Foundation
 import SwiftUI
+import SwiftData
 
+@Model
 final class Post: Identifiable {
-    let id = UUID().uuidString
+    var id = UUID().uuidString
     
-    private let title: String
-    private let tags: [String]
-    private let owner: User
+    private var title: String
+    private var tags: [String]
+    private var owner: User
     private var image: UIImage?
     
     init(title: String, tags: [String], owner: User, image: UIImage? = nil) {
