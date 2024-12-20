@@ -9,12 +9,12 @@ import SwiftData
 
 @Model
 final class Post: Identifiable {
-    var id = UUID().uuidString
+    var id = UUID()
     
-    private var title: String
-    private var tags: [String]
-    private var owner: User
-    private var image: Data?
+    var title: String
+    var tags: [String]
+    var owner: User
+    var image: Data?
     
     init(title: String, tags: [String], owner: User, image: UIImage? = nil) {
         self.title = title
