@@ -9,6 +9,6 @@ import SwiftUI
 
 extension UIImage {
     func convertToData() -> Data? {
-        return self.jpegData(compressionQuality: 0.5)
+        self.jpegData(compressionQuality: 0.5)
     }
 }
