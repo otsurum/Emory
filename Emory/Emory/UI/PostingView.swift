@@ -108,7 +108,7 @@ struct PostingView: View {
                 Button("閉じる", role: .cancel) {
                     isPushedCamera = false
                 }
-        }
+            }
         }
     }
 }

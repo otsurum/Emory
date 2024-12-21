@@ -13,16 +13,6 @@ final class AuthViewModel: ObservableObject {
     @Published var isAuthenticated = false
     @Published var errorMessage: String?
     
-    init() {
-        observeAuthChanges()
-    }
-    
-    private func observeAuthChanges() {
-        Auth.auth().addStateDidChangeListener { [weak self] _, user in
-            self?.isAuthenticated = user != nil
-        }
-    }
-    
     func signIn(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
             self?.errorHandling(error)
