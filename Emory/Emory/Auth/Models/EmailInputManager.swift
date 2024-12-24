@@ -9,18 +9,23 @@ import SwiftUI
 class EmailInputManager {
     private let tailDomain = "nitech.ac.jp"
     
-    func getTailDomain() -> String {
+    private func getTailDomain() -> String {
         tailDomain
+    }
+    
+    func getNitechEmailAddress(address: String) -> String {
+        address+self.getTailDomain()
     }
     
     @ViewBuilder
     func textFieldForEmail(mailAddress: Binding<String>) -> some View {
         HStack {
-            TextField("メールアドレス(一部ドメイン固定)", text: mailAddress)
+            TextField("MailAddress", text: mailAddress)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .frame(width: 200)
                 .padding(.leading)
             Text(getTailDomain())
+                .padding(.trailing)
             
         }
     }

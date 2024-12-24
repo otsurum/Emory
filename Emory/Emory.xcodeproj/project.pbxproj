@@ -11,6 +11,7 @@
 		F313BF302CF75783008E9FDE /* PostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F313BF2F2CF75783008E9FDE /* PostingView.swift */; };
 		F33CC4682CF9AA3E00487894 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CC4672CF9AA3E00487894 /* CameraCaptureView.swift */; };
 		F33CC46A2CF9AC2A00487894 /* PhotoLibraryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CC4692CF9AC2A00487894 /* PhotoLibraryPickerView.swift */; };
+		F34B1A762D1A78A000A6A5C9 /* EmailTextProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34B1A752D1A78A000A6A5C9 /* EmailTextProviderTests.swift */; };
 		F352DE9F2D154017003587CB /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F352DE9E2D154017003587CB /* UIImage.swift */; };
 		F352DEA12D1541BA003587CB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F352DEA02D1541BA003587CB /* Data.swift */; };
 		F35551532CF81D1C00F6841A /* TagListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35551522CF81D1C00F6841A /* TagListing.swift */; };
@@ -62,6 +63,7 @@
 		F313BF2F2CF75783008E9FDE /* PostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingView.swift; sourceTree = "<group>"; };
 		F33CC4672CF9AA3E00487894 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
 		F33CC4692CF9AC2A00487894 /* PhotoLibraryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPickerView.swift; sourceTree = "<group>"; };
+		F34B1A752D1A78A000A6A5C9 /* EmailTextProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextProviderTests.swift; sourceTree = "<group>"; };
 		F35157362CF9E0D2008EBB23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F352DE9E2D154017003587CB /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		F352DEA02D1541BA003587CB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				F39D3BF32CF7340900E640A5 /* EmoryTests.swift */,
+				F34B1A752D1A78A000A6A5C9 /* EmailTextProviderTests.swift */,
 			);
 			path = EmoryTests;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F34B1A762D1A78A000A6A5C9 /* EmailTextProviderTests.swift in Sources */,
 				F39D3BF42CF7340900E640A5 /* EmoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
