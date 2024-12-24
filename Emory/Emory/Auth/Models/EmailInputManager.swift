@@ -29,6 +29,14 @@ class EmailInputManager {
             
         }
     }
+    
+    @ViewBuilder
+    func textFieldForPassword(password: Binding<String>) -> some View {
+        SecureField("Password", text: password)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .frame(width: 300)
+            .padding()
+    }
 }
 
 #Preview {

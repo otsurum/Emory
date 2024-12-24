@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct ResetPasswordView: View {
-    @State private var email: String = ""
+    @State private var emailAddress: String = ""
     @ObservedObject var viewModel: AuthViewModel
+    
+    let emailInputManager = EmailInputManager()
     
     var body: some View {
         VStack {
-            TextField("Email", text: $email)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+            emailInputManager.textFieldForEmail(mailAddress: $emailAddress)
             
             AuthErrorText(viewModel.errorMessage)
             
             Button("リセット用のメール送信") {
-                viewModel.resetPassword(email: email)
-            }
+                viewModel.resetPassword(email: emailInputManager.getNitechEmailAddress(address: emailAddress))
+            }.padding()
         }
     }
 }
