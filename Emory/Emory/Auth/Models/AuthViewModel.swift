@@ -13,16 +13,6 @@ final class AuthViewModel: ObservableObject {
     @Published var isAuthenticated = false
     @Published var errorMessage: String?
     
-    init() {
-        observeAuthChanges()
-    }
-    
-    private func observeAuthChanges() {
-        Auth.auth().addStateDidChangeListener { [weak self] _, user in
-            self?.isAuthenticated = user != nil
-        }
-    }
-    
     func signIn(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
             self?.errorHandling(error)
@@ -48,19 +38,23 @@ final class AuthViewModel: ObservableObject {
             isAuthenticated = false
             self.errorMessage = nil
         } catch {
-            self.errorMessage = self.createErrormessageFromAuth(error)
+            errorHandling(error)
         }
     }
     
+    // 引数のエラーに応じてerrorMessageを更新
     private func errorHandling(_ error: Error?) {
         guard let error = error else {
-            self.errorMessage = nil
+            // 引数errorがnilの場合
+            self.errorMessage = nil // errorMessageを初期化
             return
         }
 
+        // 引数errorに値がある場合にerrorMessage更新
         self.errorMessage = self.createErrormessageFromAuth(error)
     }
     
+    // エラーに応じてerrorMessageに入れる値の制御
     private func createErrormessageFromAuth(_ error: Error) -> String {
         let nsError = error as NSError
         

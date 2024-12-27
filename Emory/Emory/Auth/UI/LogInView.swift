@@ -8,18 +8,19 @@
 import SwiftUI
 
 struct LogInView: View {
-    @State private var email: String = ""
+    @State private var emailAddress: String = ""
     @State private var password: String = ""
     @ObservedObject var viewModel: AuthViewModel
     
+    var emailInputManager = EmailInputManager()
+    
     var body: some View {
         VStack {
-            TextField("Email", text: $email)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+            emailInputManager.textFieldForEmail(mailAddress: $emailAddress)
             
             SecureField("Password", text: $password)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
+                .frame(width: 300)
                 .padding()
             
             
@@ -30,7 +31,7 @@ struct LogInView: View {
             AuthErrorText(viewModel.errorMessage)
             
             Button("ログイン") {
-                viewModel.signIn(email: email, password: password)
+                viewModel.signIn(email: emailInputManager.getNitechEmailAddress(address: emailAddress), password: password)
             }
             
             NavigationLink(destination: SignUpView(viewModel: viewModel)) {

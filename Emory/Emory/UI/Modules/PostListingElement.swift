@@ -27,7 +27,7 @@ struct PostListingElement: View {
             
             HStack {
                 Spacer()
-                if let postedImage = post.getImage() {
+                if let postedImage = post.getUIImage() {
                     Image(uiImage: postedImage)
                         .resizable()
                 }

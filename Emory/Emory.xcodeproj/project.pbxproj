@@ -11,6 +11,9 @@
 		F313BF302CF75783008E9FDE /* PostingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F313BF2F2CF75783008E9FDE /* PostingView.swift */; };
 		F33CC4682CF9AA3E00487894 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CC4672CF9AA3E00487894 /* CameraCaptureView.swift */; };
 		F33CC46A2CF9AC2A00487894 /* PhotoLibraryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CC4692CF9AC2A00487894 /* PhotoLibraryPickerView.swift */; };
+		F34B1A762D1A78A000A6A5C9 /* EmailTextProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34B1A752D1A78A000A6A5C9 /* EmailTextProviderTests.swift */; };
+		F352DE9F2D154017003587CB /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F352DE9E2D154017003587CB /* UIImage.swift */; };
+		F352DEA12D1541BA003587CB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F352DEA02D1541BA003587CB /* Data.swift */; };
 		F35551532CF81D1C00F6841A /* TagListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35551522CF81D1C00F6841A /* TagListing.swift */; };
 		F35551552CF81F2900F6841A /* TagSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35551542CF81F2900F6841A /* TagSegment.swift */; };
 		F384536F2CF7FC2500C4354A /* PostedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F384536E2CF7FC2500C4354A /* PostedDetailView.swift */; };
@@ -30,6 +33,7 @@
 		F3A4BA972D05649A003D884E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4BA962D05649A003D884E /* View.swift */; };
 		F3A4BA9B2D0569F2003D884E /* UserSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4BA9A2D0569F2003D884E /* UserSettingsView.swift */; };
 		F3A4BA9D2D056CF6003D884E /* Mail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4BA9C2D056CF6003D884E /* Mail.swift */; };
+		F3D4DC462D16603300941925 /* EmailInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4DC452D16602300941925 /* EmailInputManager.swift */; };
 		F3D51B3F2CFBD73300FFBCE3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D51B3E2CFBD73300FFBCE3 /* User.swift */; };
 		F3DC17882D0090380026ACFA /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC17872D0090380026ACFA /* LogInView.swift */; };
 		F3DC178A2D0091670026ACFA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC17892D0091670026ACFA /* SignUpView.swift */; };
@@ -59,13 +63,17 @@
 		F313BF2F2CF75783008E9FDE /* PostingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingView.swift; sourceTree = "<group>"; };
 		F33CC4672CF9AA3E00487894 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
 		F33CC4692CF9AC2A00487894 /* PhotoLibraryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPickerView.swift; sourceTree = "<group>"; };
+		F34B1A752D1A78A000A6A5C9 /* EmailTextProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextProviderTests.swift; sourceTree = "<group>"; };
 		F35157362CF9E0D2008EBB23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F352DE9E2D154017003587CB /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		F352DEA02D1541BA003587CB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F35551522CF81D1C00F6841A /* TagListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListing.swift; sourceTree = "<group>"; };
 		F35551542CF81F2900F6841A /* TagSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSegment.swift; sourceTree = "<group>"; };
 		F384536E2CF7FC2500C4354A /* PostedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostedDetailView.swift; sourceTree = "<group>"; };
 		F38453712CF7FFDF00C4354A /* PostListingElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingElement.swift; sourceTree = "<group>"; };
 		F38453732CF8019F00C4354A /* PostListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListingView.swift; sourceTree = "<group>"; };
 		F38453762CF802E200C4354A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		F38C437E2D1533A20054D10D /* Emory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Emory.entitlements; sourceTree = "<group>"; };
 		F3987F7C2D00776E00AEF0F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3987F832D00828700AEF0F8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		F39D3BDF2CF7340700E640A5 /* Emory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +88,7 @@
 		F3A4BA962D05649A003D884E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		F3A4BA9A2D0569F2003D884E /* UserSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsView.swift; sourceTree = "<group>"; };
 		F3A4BA9C2D056CF6003D884E /* Mail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mail.swift; sourceTree = "<group>"; };
+		F3D4DC452D16602300941925 /* EmailInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailInputManager.swift; sourceTree = "<group>"; };
 		F3D51B3E2CFBD73300FFBCE3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F3DC17872D0090380026ACFA /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		F3DC17892D0091670026ACFA /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -175,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				F3987F832D00828700AEF0F8 /* AuthViewModel.swift */,
+				F3D4DC452D16602300941925 /* EmailInputManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +214,7 @@
 		F39D3BE12CF7340700E640A5 /* Emory */ = {
 			isa = PBXGroup;
 			children = (
+				F38C437E2D1533A20054D10D /* Emory.entitlements */,
 				F35157362CF9E0D2008EBB23 /* Info.plist */,
 				F39D3BE22CF7340700E640A5 /* EmoryApp.swift */,
 				F3A4BA982D0569A0003D884E /* UserSettings */,
@@ -230,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				F39D3BF32CF7340900E640A5 /* EmoryTests.swift */,
+				F34B1A752D1A78A000A6A5C9 /* EmailTextProviderTests.swift */,
 			);
 			path = EmoryTests;
 			sourceTree = "<group>";
@@ -247,6 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				F3A4BA962D05649A003D884E /* View.swift */,
+				F352DE9E2D154017003587CB /* UIImage.swift */,
+				F352DEA02D1541BA003587CB /* Data.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -416,12 +430,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D4DC462D16603300941925 /* EmailInputManager.swift in Sources */,
 				F3A4BA9B2D0569F2003D884E /* UserSettingsView.swift in Sources */,
 				F3DC17882D0090380026ACFA /* LogInView.swift in Sources */,
 				F3D51B3F2CFBD73300FFBCE3 /* User.swift in Sources */,
 				F35551532CF81D1C00F6841A /* TagListing.swift in Sources */,
 				F313BF2E2CF7532A008E9FDE /* ProfileView.swift in Sources */,
 				F313BF302CF75783008E9FDE /* PostingView.swift in Sources */,
+				F352DE9F2D154017003587CB /* UIImage.swift in Sources */,
 				F3A4BA972D05649A003D884E /* View.swift in Sources */,
 				F33CC46A2CF9AC2A00487894 /* PhotoLibraryPickerView.swift in Sources */,
 				F38453772CF802E200C4354A /* Post.swift in Sources */,
@@ -430,6 +446,7 @@
 				F35551552CF81F2900F6841A /* TagSegment.swift in Sources */,
 				F3DC178E2D0092910026ACFA /* AfterLoginView.swift in Sources */,
 				F3987F842D00828700AEF0F8 /* AuthViewModel.swift in Sources */,
+				F352DEA12D1541BA003587CB /* Data.swift in Sources */,
 				F3DC178A2D0091670026ACFA /* SignUpView.swift in Sources */,
 				F384536F2CF7FC2500C4354A /* PostedDetailView.swift in Sources */,
 				F38453722CF7FFDF00C4354A /* PostListingElement.swift in Sources */,
@@ -443,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F34B1A762D1A78A000A6A5C9 /* EmailTextProviderTests.swift in Sources */,
 				F39D3BF42CF7340900E640A5 /* EmoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +614,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Emory/Emory.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Emory/Preview Content\"";
@@ -603,6 +622,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Emory/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "taking images for posting in this app";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "choosing images in user's library for postinng in this app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -626,6 +647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Emory/Emory.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Emory/Preview Content\"";
@@ -633,6 +655,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Emory/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "taking images for posting in this app";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "choosing images in user's library for postinng in this app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -8,27 +8,25 @@
 import SwiftUI
 
 struct SignUpView: View {
-    @State private var email: String = ""
+    @State private var emailAddress: String = ""
     @State private var password: String = ""
     @ObservedObject var viewModel: AuthViewModel
+    
+    let emailInputManager = EmailInputManager()
     
     var body: some View {
         VStack {
             Text("アカウント作成")
                 .font(.largeTitle)
+                    
+            emailInputManager.textFieldForEmail(mailAddress: $emailAddress)
             
-            TextField("Email", text: $email)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            
-            SecureField("Password", text: $password)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+            emailInputManager.textFieldForPassword(password: $password)
             
             AuthErrorText(viewModel.errorMessage)
             
             Button("登録") {
-                viewModel.signUp(email: email, password: password)
+                viewModel.signUp(email: emailInputManager.getNitechEmailAddress(address: emailAddress), password: password)
             }
             
 //            if viewModel.isAuthenticated {
