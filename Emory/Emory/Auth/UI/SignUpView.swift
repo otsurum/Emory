@@ -18,11 +18,7 @@ struct SignUpView: View {
         VStack {
             Text("アカウント作成")
                 .font(.largeTitle)
-            
-//            TextField("Email", text: $email)
-//                .textFieldStyle(RoundedBorderTextFieldStyle())
-//                .padding()
-            
+                    
             emailInputManager.textFieldForEmail(mailAddress: $emailAddress)
             
             emailInputManager.textFieldForPassword(password: $password)

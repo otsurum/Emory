@@ -33,7 +33,6 @@
 		F3A4BA972D05649A003D884E /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4BA962D05649A003D884E /* View.swift */; };
 		F3A4BA9B2D0569F2003D884E /* UserSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4BA9A2D0569F2003D884E /* UserSettingsView.swift */; };
 		F3A4BA9D2D056CF6003D884E /* Mail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A4BA9C2D056CF6003D884E /* Mail.swift */; };
-		F3C1FA012D1DD11D0009E92D /* AuthErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1FA002D1DD11D0009E92D /* AuthErrorTests.swift */; };
 		F3D4DC462D16603300941925 /* EmailInputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D4DC452D16602300941925 /* EmailInputManager.swift */; };
 		F3D51B3F2CFBD73300FFBCE3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D51B3E2CFBD73300FFBCE3 /* User.swift */; };
 		F3DC17882D0090380026ACFA /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC17872D0090380026ACFA /* LogInView.swift */; };
@@ -89,7 +88,6 @@
 		F3A4BA962D05649A003D884E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		F3A4BA9A2D0569F2003D884E /* UserSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsView.swift; sourceTree = "<group>"; };
 		F3A4BA9C2D056CF6003D884E /* Mail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mail.swift; sourceTree = "<group>"; };
-		F3C1FA002D1DD11D0009E92D /* AuthErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthErrorTests.swift; sourceTree = "<group>"; };
 		F3D4DC452D16602300941925 /* EmailInputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailInputManager.swift; sourceTree = "<group>"; };
 		F3D51B3E2CFBD73300FFBCE3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F3DC17872D0090380026ACFA /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
@@ -244,7 +242,6 @@
 			children = (
 				F39D3BF32CF7340900E640A5 /* EmoryTests.swift */,
 				F34B1A752D1A78A000A6A5C9 /* EmailTextProviderTests.swift */,
-				F3C1FA002D1DD11D0009E92D /* AuthErrorTests.swift */,
 			);
 			path = EmoryTests;
 			sourceTree = "<group>";
@@ -473,7 +470,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F39D3BFE2CF7340900E640A5 /* EmoryUITests.swift in Sources */,
-				F3C1FA012D1DD11D0009E92D /* AuthErrorTests.swift in Sources */,
 				F39D3C002CF7340900E640A5 /* EmoryUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
