@@ -26,7 +26,6 @@ class EmailInputManager {
                 .padding(.leading)
             Text(getTailDomain())
                 .padding(.trailing)
-            
         }
     }
     
